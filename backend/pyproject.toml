@@ -1,0 +1,12 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend service for Karya-Agent"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.2.10",
+    "langchain-groq>=1.1.2",
+    "langgraph>=1.0.10",
+    "pydantic>=2.12.5",
+    "uvicorn>=0.41.0",
+]
