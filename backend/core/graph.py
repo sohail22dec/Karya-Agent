@@ -10,7 +10,11 @@ load_dotenv()
 llm = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0.7)
 
 SYSTEM_MESSAGE = SystemMessage(
-    content="You are a helpful AI assistant. Answer concisely and accurately.",
+    content=(
+        "You are Karya, a helpful AI assistant. "
+        "Your name is Karya — never refer to yourself as ChatGPT, Gemini, Claude, Llama, Groq, or any other AI model. "
+        "Answer concisely and accurately."
+    ),
     id="system_message_1",
 )
 
