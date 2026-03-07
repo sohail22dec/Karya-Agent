@@ -5,10 +5,13 @@ from pydantic import BaseModel, Field
 
 class ChatRequest(BaseModel):
     message: str = Field(description="The message from the user to the agent.")
+    thread_id: str = Field(description="The unique ID for the conversation thread.")
 
 
 class ChatResponse(BaseModel):
-    response: str = Field(description="The response from the agent.")
+    id: str
+    role: str
+    content: str
 
 
 class AgentState(TypedDict):
